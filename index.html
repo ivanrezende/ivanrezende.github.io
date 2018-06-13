@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+    	<title>Ivan Rezende</title>
+
+    	<link rel="stylesheet" href="style.css">
+    	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+</head>
+	
+	<body>
+	
+		<header class="cabecalho">
+			<a href="index.html"><h1 class="logo"><i class="fas fa-code"></i> Ivan Rezende</h1></a>
+			<button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
+			<nav class="menu">
+				<ul>
+					<li><a href="#" class="menu-item">Home</a></li>
+					<li><a href="#sobre" class="menu-item">Sobre mim</a></li>
+					<li><a href="#contato" class="menu-item">Contato</a></li>
+					<li><a href="#outro" class="menu-item">Outro</a></li>
+					
+				</ul>
+			</nav>
+		</header>
+		
+		<div class="carrosel">
+			<h2>Carrosel</h2>
+		</div>
+		
+		<main class="principal">
+			<div id="sobre" class="secao">
+				<h2><i class="fas fa-user"></i> Sobre mim</h2>
+				<img src="cortada.png" alt="Ivan Rezende">
+				<p>Ivan Rezende nasceu há 22 anos atrás em Três Corações - MG. Ingressou na Universidade Federal de Itajubá em 2014 e atualmente é graduando de Engenharia de Computação. Também atua como Gerente de time pela empresa júnior <a target="_blank" href="http://byron.solutions">byron.solutions</a> desde maio de 2018.
+			</div>
+			
+			<div id="contato"  class="secao">
+				<h2><i class="fas fa-envelope"></i> Contato </h2>
+				<form>
+					<input class="entrada" type="text" name="nome" placeholder="Nome">
+					<input class="entrada" type="email" name="email" placeholder="Email">
+					<textarea class="entrada mensagem"  name="mensagem" placeholder="Escreva sua mensagem!" rows="7"></textarea>
+					<button class="entrada enviar">Enviar</button>
+					
+				</form>
+			</div>
+			
+			<div id="outro" class="secao">
+				<h2>Outro!<h1>
+			</div>
+		</main>
+		
+		<footer class="rodape">
+			<div class="social">
+				<p>
+					<a target="_blank" href="https://www.facebook.com/ivan.rezende.12"><i class="fab fa-facebook-square"></i></a>
+					<a target="_blank" href="https://www.instagram.com/ivanrezende_/"><i class="fab fa-instagram"></i></a>
+					<a target="_blank" href="https://www.linkedin.com/in/ivan-rezende-498641164/"><i class="fab fa-linkedin"></i></a>
+					<a target="_blank" href="https://github.com/ivanrezende"><i class="fab fa-github-square"></i></a>
+				</p>
+				<br>
+				<p>
+					<i class="fas fa-envelope" style="font-size: 1.5em;"></i> ivanrezende.tc@gmail.com
+				</p>
+			</div>
+			<br>
+			<div class="tag">
+				Desenvolvido por <a target="_blank" href="http://byron.solutions">byron.solutions</a>
+			</div>
+		</div>
+		
+		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(".btn-menu").click(function() {
+				if($(".menu").css("display") == "none") {
+					$(".menu").fadeIn();
+				} else {
+					$(".menu").fadeOut();
+				}
+			});
+			
+			$(".menu-item").click(function() {
+					$(".menu").hide();
+			});
+		</script>
+
+	</body>
+</html>

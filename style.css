@@ -1,0 +1,233 @@
+* {
+	margin: 0; 
+	padding: 0; 
+	font-size: 100%; 
+	border: none; 
+	outline: none; 
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+}
+
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+
+body {
+	background-color: #EEE;
+}
+
+.cabecalho {
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 2% 2%;
+	text-align: center;
+	background-color: #333;
+	color: #FFF;
+}
+
+.logo {
+	float: left;
+	font-size: 2em;
+	color: #F5F5F5;
+}
+
+.sobrenome {
+	display: none;
+}
+
+.btn-menu {
+	width: 35px;
+	height: 35px;
+	float: right;
+	text-align: center;
+	border-radius: 7px;
+	background-color: #333;
+	color: #F5F5F5;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.btn-menu:hover {
+	background-color: #EEE;
+	color: #333;
+}
+/*
+.menu {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 1;
+	font-variant: small-caps;
+}
+*/
+.menu {
+	width: 100%;
+	display: none;
+	font-variant: small-caps;
+}
+
+.menu ul {
+	margin-top: 2%;
+	width: 100%;
+	float: left;
+	text-align: right;
+}
+
+.menu li {
+	padding: 1.5% 2%;
+}
+
+.menu li a {
+	font-size: 1em;
+	color: rgba(255,255,255,0.5);
+	display: block;
+	transition: all 0.5s ease;
+}
+
+.menu li:hover a {
+	color: rgba(255,255,255,1);
+}
+
+.principal {
+	width: 100%;
+	float: left;
+}
+
+.secao {
+	width: 100%;
+	text-align: center;
+	padding: 3% 4%;
+}
+
+.secao h2 {
+	font-size: 1.5em;
+	font-variant: small-caps;
+}
+
+.secao:nth-child(even) {
+	background-color: #333;
+	color: #F5F5F5;
+}
+
+#sobre img {
+	max-width: 200px;
+	width: 30%;
+	height: auto;
+	border-radius: 50%;
+	margin-top: 2%;
+}
+
+#sobre p {
+	color: #333;
+	text-align: justify;
+	text-justify: inter-word;
+	padding: 7%;
+}
+
+#sobre a {
+	color: #333;
+}
+
+#contato form {
+	max-width: 600px;
+	margin: auto;
+	margin-top: 3%;
+}
+
+#contato .entrada {
+	background-color: #333;
+	color: #F5F5F5;
+	border: 1px solid #F5F5F5;
+	width: 100%;
+	padding: 4%;
+	border-radius: 5px;
+	margin-bottom: 2%;
+	opacity: 0.5;
+}
+
+#contato .entrada:focus {
+	opacity: 1;
+}
+
+#contato .mensagem {
+	resize: none;
+	overflow: auto;
+}
+
+#contato .enviar {
+	cursor: pointer;
+	transition: all 1s ease;
+}
+
+#contato .enviar:hover {
+	background-color: #F5F5F5;
+	color: #333;
+}
+
+.rodape {
+	width: 100%;
+	float: left;
+	padding: 2% 4% 1% 4%;
+	text-align: center;
+	background-color: #333;
+	color: rgba(255,255,255,0.5);
+}
+
+.social a {
+	font-size: 2em;
+	color: rgba(255,255,255,0.5);
+	margin-right: 5%;
+	transition: all 1s ease;
+}
+
+.social a:hover {
+	color: rgba(255,255,255,1);
+}
+
+.social a:last-child {
+	margin-right: 0;
+}
+
+.social a:last-child {
+	margin-right: 0;
+}
+
+.tag a {
+	color: rgba(255,255,255,0.5);
+	transition: all 1s ease;
+}
+
+.tag a:hover {
+	color: rgba(255,255,255,1);
+}
+
+
+@media screen and (min-width: 768px) {
+
+.btn-menu {
+	display: none;
+}
+
+.menu {
+	width: auto;
+	line-height: 2em;
+	float: right;
+	display: block !important;
+	position: static;
+}
+
+.menu li {
+	padding: 0;
+	float: left;
+}
+
+.menu li a {
+	padding-right: 25px;
+}
+	
+}
