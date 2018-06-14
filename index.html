@@ -22,21 +22,23 @@
 					<li><a href="#" class="menu-item">Home</a></li>
 					<li><a href="#sobre" class="menu-item">Sobre mim</a></li>
 					<li><a href="#contato" class="menu-item">Contato</a></li>
-					<li><a href="#outro" class="menu-item">Outro</a></li>
+					<li><a href="#tecnologias" class="menu-item">Tecnologias</a></li>
 					
 				</ul>
 			</nav>
 		</header>
-		
-		<div class="carrosel">
-			<h2>Carrosel</h2>
+
+		<div class="carrossel">
+			<img class="slider" src="img/1.jpg" width="100%" alt="Carrossel">
 		</div>
 		
 		<main class="principal">
 			<div id="sobre" class="secao">
 				<h2><i class="fas fa-user"></i> Sobre mim</h2>
-				<img src="cortada.png" alt="Ivan Rezende">
-				<p>Ivan Rezende nasceu há 22 anos atrás em Três Corações - MG. Ingressou na Universidade Federal de Itajubá em 2014 e atualmente é graduando de Engenharia de Computação. Também atua como Gerente de time pela empresa júnior <a target="_blank" href="http://byron.solutions">byron.solutions</a> desde maio de 2018.
+				<img src="img/sobremim.png" alt="Ivan Rezende">
+				<p>
+					Ivan Rezende nasceu há 22 anos atrás em Três Corações - MG. Ingressou na Universidade Federal de Itajubá em 2014 e atualmente é graduando de Engenharia de Computação. Também atua como Gerente de time pela empresa júnior <a target="_blank" href="http://byron.solutions">byron.solutions</a> desde maio de 2018.
+				</p>
 			</div>
 			
 			<div id="contato"  class="secao">
@@ -50,9 +52,49 @@
 				</form>
 			</div>
 			
-			<div id="outro" class="secao">
-				<h2>Outro!<h1>
-			</div>
+			<div id="tecnologias" class="secao">
+				
+				<h2><i class="fas fa-code"></i> Tecnologias</h2>
+				
+				<div class="tec">
+				
+					<div class="tec-intro">
+						<h3><i class="fab fa-css3-alt"></i></h3>
+						<h4>HTML5</h4>
+					</div>
+					
+					<p class="tec-texto">
+						HTML é o formato padrão para criação de páginas online e aplicações de web. Todos os navegadores atuais recebem documentos em HTML que são processados renderização e apresentação do conteúdo online.
+					</p>
+					
+				</div>
+				
+				<div class="tec">
+					
+					<div class="tec-intro">
+						<h3><i class="fab fa-html5"></i></h3>
+						<h4>CSS</h4>
+					</div>
+					
+					<p class="tec-texto">
+						Cascading Style Sheets (CSS) é um simples mecanismo para adicionar estilo (cores, fontes, espaçamento, etc.) a um documento web.
+					</p>
+					
+				</div>
+				
+				<div class="tec">
+				
+					<div class="tec-intro">
+						<h3><i class="fab fa-js-square"></i></h3>
+						<h4>JavaScript</h4>
+					</div>
+					
+					<p class="tec-texto">
+						JavaScript é uma linguagem de programação que permite implementar funcionalidades mais complexas em páginas web
+					</p>
+					
+				</div>
+			
 		</main>
 		
 		<footer class="rodape">
@@ -77,18 +119,23 @@
 		
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
 		<script type="text/javascript">
 			$(".btn-menu").click(function() {
-				if($(".menu").css("display") == "none") {
-					$(".menu").fadeIn();
-				} else {
-					$(".menu").fadeOut();
-				}
+				$(".menu").slideToggle();
 			});
 			
 			$(".menu-item").click(function() {
 					$(".menu").hide();
 			});
+			
+			var img = 1;
+			var srcImg; 
+			setInterval(function() {
+				img = (img % 3) + 1;
+				srcImg = "img/" + img + ".jpg";
+				$(".slider").attr("src", srcImg);
+			}, 3000);
 		</script>
 
 	</body>
