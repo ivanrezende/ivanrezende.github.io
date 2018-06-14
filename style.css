@@ -30,10 +30,7 @@ body {
 	float: left;
 	font-size: 2em;
 	color: #F5F5F5;
-}
-
-.sobrenome {
-	display: none;
+	text-variant: small-caps;
 }
 
 .btn-menu {
