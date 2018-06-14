@@ -30,7 +30,7 @@ body {
 	float: left;
 	font-size: 2em;
 	color: #F5F5F5;
-	text-variant: small-caps;
+	font-variant: small-caps;
 }
 
 .btn-menu {
